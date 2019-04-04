@@ -16,11 +16,19 @@
 
 #banner h2{
     margin: 0 10%;
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 3em;
     color: #A1CE54;
 }
+
+#banner p{
+    margin: 0 10%;
+}
+
+
 .actions li a{
+    margin-top: 30px;
     background: #236532;
 }
 
@@ -41,7 +49,7 @@
     }
     
   }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
     #banner{
         margin: 0;
         padding: 30% 10%;
@@ -55,6 +63,9 @@
     }
     #banner p{
         font-size: 1.2em;
+    }
+    .actions li a{
+        margin-top: 30px!important;
     }
     
   }
