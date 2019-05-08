@@ -201,6 +201,19 @@
 			margin-bottom: 0.5em;
 		}
 
+		/* ___ CUSTOM */
+		header.major .top-text-container{
+			/* display: flex;
+			justify-content: center; */
+		}
+		header.major .top-text-container p{
+			/* min-width: 200px;
+			max-width: 300px; */
+			display: block;
+			margin: 20px 0;
+		}
+		/* ___ CUSTOM */
+
 		header.major p {
 			font-size: 1.5em;
 		}
@@ -1216,4 +1229,33 @@
 
 		.grid-demo .row.flush > div:last-child span {
 			border-radius: 0 4px 4px 0;
+		}
+
+
+		/* ___ CURSTOM */
+
+		.own-center{
+			display: flex!important;
+			justify-content: center;
+		}
+		.profiles h2{
+			font-size: 40px;
+			color: #248024;
+		}
+
+		.profiles div section h4{
+			font-size: 20px;
+			text-align: center;
+			color: #248024;
+		}
+
+		footer p {
+			display: block;
+			background: #248024;
+			color: white;
+			padding: 60px;
+			width: 100%;
+			line-height: 40px;
+			font-size: 30px;
+			border-radius: 50px;
 		}
