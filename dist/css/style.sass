@@ -59,6 +59,15 @@ li
     &:hover
         opacity: 0.9
 
+.section-h1
+    
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+
 // ___ Header
 
 .top-bar
@@ -184,6 +193,7 @@ li
         width: 100%
         user-select: none
 
+
     &__container
         max-width: 1440px
         margin: 0 auto
@@ -266,13 +276,6 @@ li
             grid-area: cEnd
 
         h1
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 40px;
-            line-height: 47px;
-            text-align: center;
-
             max-width: 585px;
             justify-self: center
 
@@ -307,14 +310,14 @@ li
             justify-self: center
 
 
-.middle-section
+.sky-section
 
     position: relative
     top: -490px
     z-index: -1
     min-height: 560px;
     background-color: #4B84C8
-    &:after
+    &:before
         content: ""
         width: 100%
         display: block
@@ -327,8 +330,80 @@ li
         left: 0
         min-height: 560px;
 
-    &__bg-img
-        opacity: 0.3
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+        display: grid
+        height: 100%
+        position: relative
+        z-index: 100
 
-    img
-        width: 100%
+        h1
+
+            max-width: 585px;
+            justify-self: center
+
+            margin-top: 10%
+            color: #fff
+
+.card-section
+    background: #fff
+    height: 244
+    position: relative
+    top: -490px
+
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+
+        .card-container
+            margin: 0 3%
+            display: flex
+            justify-content: space-between
+
+        .card
+            position: relative
+            display: grid
+            grid-template-rows: 120px auto
+            top: -270px
+
+            width: 371px;
+            height: 528px;
+
+            background: #fff;
+            box-shadow: 0px 47px 47px rgba(0, 0, 0, 0.094);
+            border-radius: 29px;
+            text-align: center
+
+            h1
+                width: 238.14px;
+                height: 69.21px;
+
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 78px;
+                line-height: 91px;
+                
+
+                color: #4B84C8;   
+                margin-top: 20px
+                justify-self: center
+
+            p
+                margin: 0 42px
+
+.why-section
+    background: #fff
+    position: relative
+    top: -590px
+
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+        h1
+            font-weight: bolder;
+            letter-spacing: 0.08em;
+
+            color: #4B84C8;
+            
