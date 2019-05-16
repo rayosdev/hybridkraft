@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage":"https://rayosdev.github.io/hybrid-kraft",
+  "homepage": "https://rayosdev.github.io/hybrid-kraft",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }

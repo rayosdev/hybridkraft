@@ -183,6 +183,7 @@ li {
   position: relative;
   min-height: 500px;
   background: #000;
+  top: -50px;
 }
 
 .top-content:before {
@@ -201,8 +202,6 @@ li {
 
 .top-content .top-content__bend {
   border: solid 1px rgba(0, 0, 0, 0);
-  position: relative;
-  top: -50px;
   width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -213,6 +212,7 @@ li {
 .top-content__container {
   max-width: 1440px;
   margin: 0 auto;
+  margin-top: 3%;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -259,13 +259,14 @@ li {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(33.02%, #7BCD73), color-stop(69.52%, #4B84C8), color-stop(76.11%, rgba(75, 132, 200, 0)));
   background: linear-gradient(180deg, #7BCD73 33.02%, #4B84C8 69.52%, rgba(75, 132, 200, 0) 76.11%);
   min-height: 1200px;
+  position: relative;
+  top: -100px;
 }
 
 .top-section__bend {
-  border: solid 1px rgba(0, 0, 0, 0);
   position: relative;
+  border: solid 1px rgba(0, 0, 0, 0);
   z-index: 100;
-  top: -100px;
   width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -374,5 +375,35 @@ li {
   margin-top: 30px;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.middle-section {
+  position: relative;
+  top: -490px;
+  z-index: -1;
+  min-height: 560px;
+  background-color: #4B84C8;
+}
+
+.middle-section:after {
+  content: "";
+  width: 100%;
+  display: block;
+  background-image: url("../img/img-clouds.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 560px;
+}
+
+.middle-section__bg-img {
+  opacity: 0.3;
+}
+
+.middle-section img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

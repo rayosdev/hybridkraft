@@ -163,12 +163,12 @@ li
     position: relative
     min-height: 500px
     background: #000
+    top: -50px
 
     &:before
         content: ""
         width: 100%
         background: url("../img/img-header-byggplass.jpg") no-repeat
-
         background-size: cover
         display: block;
         position: absolute;
@@ -181,14 +181,13 @@ li
     .top-content__bend
         // z-index: -1
         border: solid 1px rgba(0,0,0,0)
-        position: relative
-        top: -50px
         width: 100%
         user-select: none
 
     &__container
         max-width: 1440px
         margin: 0 auto
+        margin-top: 3%
         position: relative
         display: grid
         justify-content: center
@@ -228,12 +227,13 @@ li
     width: 100%
     background: linear-gradient(180deg, #7BCD73 33.02%, #4B84C8 69.52%, rgba(75, 132, 200, 0) 76.11%);
     min-height: 1200px;
+    position: relative
+    top: -100px
 
     &__bend
-        border: solid 1px rgba(0,0,0,0)
         position: relative
+        border: solid 1px rgba(0,0,0,0)
         z-index: 100
-        top: -100px
         width: 100%
         user-select: none
 
@@ -307,3 +307,28 @@ li
             justify-self: center
 
 
+.middle-section
+
+    position: relative
+    top: -490px
+    z-index: -1
+    min-height: 560px;
+    background-color: #4B84C8
+    &:after
+        content: ""
+        width: 100%
+        display: block
+        background-image: url("../img/img-clouds.jpg")
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.3
+        position: absolute
+        top: 0
+        left: 0
+        min-height: 560px;
+
+    &__bg-img
+        opacity: 0.3
+
+    img
+        width: 100%
