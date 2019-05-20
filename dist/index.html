@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>HybridKraft</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+
 </head>
 
 <body>
+
+<div id="toTopBtn" class="to-the-top-btn">
+    <a href="#top">
+        <img src="img/to-top.svg" alt="">
+    </a>
+</div>
 
 <div class="main-container">
     <header>
@@ -25,11 +32,11 @@
                     <a class="top-logo" href=""><img src="img/top-Logo.svg" alt=""></a>
                     <ul>
                         <li><a class="page-active" href="#">HJEM</a></li>
-                        <li><a class="" href="#">PRODUKT</a></li>
-                        <li><a class="" href="#">HVORFOR HYBRID</a></li>
-                        <li><a class="" href="#">ANVENDELSER</a></li>
-                        <li><a class="" href="#">OM OSS</a></li>
-                        <li><button>KONTAKT</button></li>
+                        <!-- <li><a class="" href="#">PRODUKT</a></li> -->
+                        <li><a class="" href="#hvorfor">HVORFOR HYBRID</a></li>
+                        <li><a class="" href="#bruk">ANVENDELSER</a></li>
+                        <li><a class="" href="#oss">OM OSS</a></li>
+                        <li><button><a href="#kontakt">KONTAKT</a></button></li>
                     </ul>
                 </nav>
             </div>
@@ -40,7 +47,7 @@
             <div class="top-content__container">
                 <h1>Miljøvennlig og stille strøm</h1>
                 <p>Med en grønnere profil mot utslippsfrie byggeplasser</p>
-                <button class="action-btn-outlined" >SE MER</button>
+                <button class="action-btn-outlined"><a href="#hva-er-hybridkraft">SE MER</a></button>
             </div>
         </div>
     </header>
@@ -48,6 +55,7 @@
         <img class="top-section__bend" src="img/bg-linear-top-bend.svg" alt="" srcset="">
         
         <div class="top-section__container">
+            <div id="oss"></div>
             <img id="cPlug" class="graphic-plug" src="img/graphic-plug.svg" alt="">
             <h1 id="cHead" class="section-h1">Redusér løpende kostnader med ren og fleksibel kraft</h1>
             <img id="cNatu" src="img/img-nature.jpg" alt="" class="img-nature-sm">
@@ -69,6 +77,7 @@
     <section class="sky-section">
         <!-- <img class="middle-section__bg-img" src="img/img-clouds.jpg" alt="" srcset=""> -->
         <div class="sky-section__container">
+            <div id="hva-er-hybridkraft">test</div>
             <h1 class="section-h1">Hva er Hybridkraft?</h1>
         </div>
     </section>
@@ -111,6 +120,7 @@
     </section>
     <section class="why-section">
         <div class="why-section__container">
+            <div id="hvorfor"></div>
             <h1 class="section-h1">Hvorfor hybrid</h1>
             <div class="why-card-contanier">
                 <div class="why-card">
@@ -164,17 +174,18 @@
             <table>
                 <tr>
                     <td colspan="2">
-                        <h2>Reduksjon på utslipp og dieselforbruk</h2>
+                        <h2>EKSEMPEL PÅ REDUKSJON</h2>
+                        <p>Målt over en 2-måneders periode</p>
                     </td>
                 </tr>
                 <tr>
-                    <td>Uten Hybridkraft (pr. måned)</td> <td>Med Hybridkraft (pr. måned)</td>
+                    <td>Uten Hybridkraft</td> <td>Med Hybridkraft</td>
                 </tr>
                 <tr>
                     <td>6,75 tonn CO2 utslipp</td> <td>2,5 tonn CO2 utslipp <br /> (4,2 tonn mindre)</td>
                 </tr>
                 <tr>
-                    <td>2570 liter diesel</td> <td>2570 liter diesel <br /> (sparer 1612 liter)</td>
+                    <td>2570 liter diesel</td> <td>958 liter diesel <br /> (sparer 1612 liter)</td>
                 </tr>
                 <tr>
                     <td>Konstant støy</td>  <td>398 timer stille drift</td>
@@ -182,8 +193,16 @@
             </table>
         </div>
     </section>
+
+    <section class="our-mission">
+        <div class="our-mission__contianer">
+            <p>“Vår misjon er å bidra til mindre belastning på miljøet ved å tilby løsninger som reduserer CO2 utslipp og støy. Samtidig vil de som benytter våre løsninger bli mer attraktive med en grønnere profil og mer konkurransedyktige med en mer effektiv og arbeidsbesparende strømleveranse”</p>
+        </div>
+    </section>
+
     <section class="application-section">
         <div class="application-section__container">
+            <div id="bruk"></div>
             <h1>Bruksområder</h1>
             <ul>
                 <li>
@@ -228,15 +247,28 @@
         </div>
     </section>
     <footer>
+        <div id="kontakt"></div>
         <div class="footer__contianer">
-            <div class="contianer">
-                <h1>
-                    QUWE
-                </h1>
+            <div class="footer__card-contianer">
+                <div class="contact-card">
+                    <h2>Kontakt:</h2>
+                    <p><a href="mailto:info@hybridkraft.no">info@hybridkraft.no</a></p>
+                    <p>+47 91 56 27 46</p>
+                </div>
+                <div class="contact-card">
+                    <h2>HYBRIDKRAFT AS</h2>
+                    <p>Fru Kroghs brygge 10,</p>
+                    <p>0252 Oslo</p>
+                </div>
+            </div>
+            <div class="footer__bottom-panel">
+                <p>made by isaksen tech</p>
+                <img src="img/footer-logo.svg" alt="" class="footer-logo">
             </div>
         </div>
     </footer>
 </div>
 
+<script src="script/main.js"></script>
 </body>
 </html>

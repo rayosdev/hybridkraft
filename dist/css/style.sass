@@ -6,15 +6,17 @@ $primary-color: #333;
     margin: 0
     box-sizing: border-box
 
+html
+    scroll-behavior: smooth;
+
 body
     font-family: Raleway;
-    background: #eee
-    background: #e00
+    // background: #eee
+    background: #233F61;
 
 a
     text-decoration: none
     color: unset
-
 
 li
     list-style: none
@@ -30,6 +32,28 @@ li
 
 
 
+// __ Specials
+
+.hiden
+    opacity: 0
+    transition: all 0.5s
+
+.to-the-top-btn
+    transition: all 0.5s
+    position: fixed
+    bottom: 40px
+    right: 40px
+    z-index: 999
+    
+    a
+        display: block
+        width: 70px
+        background: rgba(0,122,122,0.5)
+        padding: 22px
+        border-radius: 100%
+
+        img
+            width: 100%
 
 // ___ Prototype
 
@@ -145,6 +169,7 @@ li
                         background: #237BE3
 
                     button
+                        margin-right: 20px
                         align-self: center
                         width: 149px;
                         height: 44px;
@@ -166,6 +191,7 @@ li
                         &:hover
                             background: #dddddd
                             color: #237BE3
+
 .top-content
 
     width: 100%
@@ -193,6 +219,8 @@ li
         border: solid 1px rgba(0,0,0,0)
         width: 100%
         user-select: none
+        border: none
+
 
 
     &__container
@@ -203,6 +231,10 @@ li
         display: grid
         justify-content: center
         text-align: center
+
+        #oss
+            position: relative
+            top: -20px
 
         h1
             font-family: Roboto;
@@ -234,6 +266,11 @@ li
             position: relative
             z-index: 1
 
+            a   
+                display: block
+                width: 100%
+                height: 100%
+
 .top-section
     width: 100%
     background: linear-gradient(180deg, #7BCD73 33.02%, #4B84C8 69.52%, rgba(75, 132, 200, 0) 76.11%);
@@ -247,6 +284,7 @@ li
         z-index: 100
         width: 100%
         user-select: none
+        border: none
 
 
     &__container
@@ -340,6 +378,11 @@ li
         position: relative
         z-index: 100
 
+
+        #hva-er-hybridkraft
+            position: relative
+            top: -10px
+
         h1
 
             max-width: 585px;
@@ -417,6 +460,9 @@ li
         max-width: 1440px
         margin: 0 auto
 
+        #hvorfor
+            position: relative
+            top: -120px
         h1
             font-weight: bolder;
             letter-spacing: 0.08em;
@@ -501,6 +547,12 @@ li
                     padding: 30px
                     text-transform: uppercase
                     font-weight: 500;
+                p
+                    background: #4B84C8;
+                    color: #fff
+                    font-weight: 400
+                    font-style: italic
+                    padding-bottom: 20px
                     
 
                 // __All in col 1
@@ -533,12 +585,45 @@ li
                 color: #4B84C8;
                 font-weight: 500;
 
+.our-mission
+    min-height: 200px
+    position: relative
+    top: -690px
+    background: #fff
+
+    &__contianer
+        min-height: 500px
+        max-width: 1440px
+        margin: auto auto
+        display: grid
+        justify-content: center
+        align-content: center
+
+        p
+            display: block
+            position: relative
+            top: -250px
+            margin: 0 20%
+
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24.0966px;
+            line-height: 177.5%;
+            /* or 32px */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.085em;
+
+            color: #154A88;
+
 .application-section
     background: #fff
     position: relative
-    top: -600px
-    background: linear-gradient(180deg, #4B84C8 90%, #233F61 100%);
-
+    top: -790px
+    background: linear-gradient(180deg, #4B84C8 21.24%, #233F61 100%);
     &:before
         content: ""
         display: block
@@ -557,6 +642,11 @@ li
         margin: 0 auto
         position: relative
         top: -280px
+        
+        #bruk
+            position: relative
+            top: -120px
+
         h1  
             padding: 20px
             color: #fff
@@ -608,27 +698,77 @@ li
 
 
 footer
-    position: absolute
-    width: 100%
+
+    // position: absolute
+    position: relative
+    display: grid
+    justify-content: center
+    top: -460px
+
+
+    #kontakt
+        position: relative
+        top: -500px
 
     .footer__contianer
-        position: absolute
-        left: 0
-        top: -460px
-        height: 600px
-        max-width: 1440px
-        // min-height: 600px
-        margin: 0 auto
-
-        .container
-            width: 100%
-            height: 600px
-            max-width: 1440px
-            // min-height: 600px
+        
+        &:before
+            position: relative
+            top: -100px
+            content: ""
+            display: block
+            height: 3px
+            width: 90%
+            background: #fff
+            opacity: 0.4
             margin: 0 auto
+            margin-bottom: 40px
+
+        margin-left: 0 auto
+        left: 0
+        width: 100vw
+        max-width: 1440px
+        // background: red
+
+        .footer__card-contianer
+            display: flex
+            justify-content: space-between
             
-            h1
-                background: blue
-                background: #233F61;
-                display: block
-                height: 400px
+        .contact-card
+            padding: 60px
+            color: #fff
+            height: 250px 
+            display: grid
+
+            h2
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 29.2682px;
+                line-height: 34px;
+                letter-spacing: 0.08em;
+
+                color: #FFFFFF;
+
+            p
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20.0696px;
+                line-height: 24px;
+                letter-spacing: 0.15em;
+
+                color: #FFFFFF;
+
+        .footer__bottom-panel
+            color: #ffffff
+            padding: 20px 60px
+            display: flex
+            justify-content: space-between
+
+            p
+                opacity: 0.4
+
+            .footer-logo
+                // background: red
+
