@@ -5,10 +5,13 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Raleway;
-  background: #eee;
-  background: #e00;
+  background: #233F61;
 }
 
 a {
@@ -22,6 +25,33 @@ li {
 
 .debug {
   border: solid 1px red !important;
+}
+
+.hiden {
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.to-the-top-btn {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+}
+
+.to-the-top-btn a {
+  display: block;
+  width: 70px;
+  background: rgba(0, 122, 122, 0.5);
+  padding: 22px;
+  border-radius: 100%;
+}
+
+.to-the-top-btn img {
+  width: 100%;
 }
 
 .action-btn-outlined {
@@ -232,6 +262,11 @@ li {
   text-align: center;
 }
 
+.top-content__container #oss {
+  position: relative;
+  top: -20px;
+}
+
 .top-content__container h1 {
   font-family: Roboto;
   font-style: normal;
@@ -262,6 +297,12 @@ li {
   width: 204px;
   position: relative;
   z-index: 1;
+}
+
+.top-content__container button a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .top-section {
@@ -414,6 +455,11 @@ li {
   z-index: 100;
 }
 
+.sky-section__container #hva-er-hybridkraft {
+  position: relative;
+  top: -10px;
+}
+
 .sky-section__container h1 {
   max-width: 585px;
   -ms-grid-column-align: center;
@@ -497,6 +543,11 @@ li {
 .why-section__container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.why-section__container #hvorfor {
+  position: relative;
+  top: -120px;
 }
 
 .why-section__container h1 {
@@ -663,6 +714,11 @@ li {
   top: -280px;
 }
 
+.application-section__container #bruk {
+  position: relative;
+  top: -120px;
+}
+
 .application-section__container h1 {
   padding: 20px;
   color: #fff;
@@ -719,30 +775,36 @@ li {
 }
 
 footer {
-  position: absolute;
-  width: 100%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -460px;
 }
 
 footer .footer__contianer {
-  position: absolute;
+  margin-left: 0 auto;
   left: 0;
-  top: -460px;
-  height: 600px;
+  width: 100vw;
   max-width: 1440px;
-  margin: 0 auto;
 }
 
-footer .footer__contianer .container {
-  width: 100%;
-  height: 600px;
-  max-width: 1440px;
-  margin: 0 auto;
+footer .footer__contianer .footer__card-contianer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-footer .footer__contianer .container h1 {
-  background: blue;
-  background: #233F61;
-  display: block;
-  height: 400px;
+footer .footer__contianer .contact-card {
+  padding: 50px;
+  color: #fff;
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
 }
 /*# sourceMappingURL=style.css.map */

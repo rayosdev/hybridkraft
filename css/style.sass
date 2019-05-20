@@ -6,10 +6,13 @@ $primary-color: #333;
     margin: 0
     box-sizing: border-box
 
+html
+    scroll-behavior: smooth;
+
 body
     font-family: Raleway;
-    background: #eee
-    background: #e00
+    // background: #eee
+    background: #233F61;
 
 a
     text-decoration: none
@@ -29,6 +32,30 @@ li
 //     margin: 0 auto
 
 
+
+// __ Specials
+
+.hiden
+    opacity: 0
+    transition: all 0.5s
+
+
+.to-the-top-btn
+    transition: all 0.5s
+    position: fixed
+    bottom: 40px
+    right: 40px
+    z-index: 999
+    
+    a
+        display: block
+        width: 70px
+        background: rgba(0,122,122,0.5)
+        padding: 22px
+        border-radius: 100%
+
+    img
+        width: 100%
 
 
 // ___ Prototype
@@ -204,6 +231,10 @@ li
         justify-content: center
         text-align: center
 
+        #oss
+            position: relative
+            top: -20px
+
         h1
             font-family: Roboto;
             font-style: normal;
@@ -233,6 +264,11 @@ li
             width: 204px
             position: relative
             z-index: 1
+
+            a   
+                display: block
+                width: 100%
+                height: 100%
 
 .top-section
     width: 100%
@@ -340,6 +376,11 @@ li
         position: relative
         z-index: 100
 
+
+        #hva-er-hybridkraft
+            position: relative
+            top: -10px
+
         h1
 
             max-width: 585px;
@@ -417,6 +458,9 @@ li
         max-width: 1440px
         margin: 0 auto
 
+        #hvorfor
+            position: relative
+            top: -120px
         h1
             font-weight: bolder;
             letter-spacing: 0.08em;
@@ -557,6 +601,11 @@ li
         margin: 0 auto
         position: relative
         top: -280px
+        
+        #bruk
+            position: relative
+            top: -120px
+
         h1  
             padding: 20px
             color: #fff
@@ -608,27 +657,29 @@ li
 
 
 footer
-    position: absolute
-    width: 100%
+    // position: absolute
+    position: relative
+    display: grid
+    justify-content: center
+    top: -460px
 
     .footer__contianer
-        position: absolute
+        margin-left: 0 auto
         left: 0
-        top: -460px
-        height: 600px
+        width: 100vw
         max-width: 1440px
-        // min-height: 600px
-        margin: 0 auto
+        // background: red
 
-        .container
-            width: 100%
-            height: 600px
-            max-width: 1440px
-            // min-height: 600px
-            margin: 0 auto
+        .footer__card-contianer
+            display: flex
+            justify-content: space-between
             
-            h1
-                background: blue
-                background: #233F61;
-                display: block
-                height: 400px
+
+
+        .contact-card
+            padding: 50px
+            color: #fff
+            height: 200px 
+            // background: green
+            display: grid
+        
