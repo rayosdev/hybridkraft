@@ -18,7 +18,6 @@ a
     text-decoration: none
     color: unset
 
-
 li
     list-style: none
 
@@ -39,7 +38,6 @@ li
     opacity: 0
     transition: all 0.5s
 
-
 .to-the-top-btn
     transition: all 0.5s
     position: fixed
@@ -54,9 +52,8 @@ li
         padding: 22px
         border-radius: 100%
 
-    img
-        width: 100%
-
+        img
+            width: 100%
 
 // ___ Prototype
 
@@ -172,6 +169,7 @@ li
                         background: #237BE3
 
                     button
+                        margin-right: 20px
                         align-self: center
                         width: 149px;
                         height: 44px;
@@ -193,6 +191,7 @@ li
                         &:hover
                             background: #dddddd
                             color: #237BE3
+
 .top-content
 
     width: 100%
@@ -220,6 +219,8 @@ li
         border: solid 1px rgba(0,0,0,0)
         width: 100%
         user-select: none
+        border: none
+
 
 
     &__container
@@ -283,6 +284,7 @@ li
         z-index: 100
         width: 100%
         user-select: none
+        border: none
 
 
     &__container
@@ -545,6 +547,12 @@ li
                     padding: 30px
                     text-transform: uppercase
                     font-weight: 500;
+                p
+                    background: #4B84C8;
+                    color: #fff
+                    font-weight: 400
+                    font-style: italic
+                    padding-bottom: 20px
                     
 
                 // __All in col 1
@@ -577,12 +585,45 @@ li
                 color: #4B84C8;
                 font-weight: 500;
 
+.our-mission
+    min-height: 200px
+    position: relative
+    top: -690px
+    background: #fff
+
+    &__contianer
+        min-height: 500px
+        max-width: 1440px
+        margin: auto auto
+        display: grid
+        justify-content: center
+        align-content: center
+
+        p
+            display: block
+            position: relative
+            top: -250px
+            margin: 0 20%
+
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24.0966px;
+            line-height: 177.5%;
+            /* or 32px */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.085em;
+
+            color: #154A88;
+
 .application-section
     background: #fff
     position: relative
-    top: -600px
-    background: linear-gradient(180deg, #4B84C8 90%, #233F61 100%);
-
+    top: -790px
+    background: linear-gradient(180deg, #4B84C8 21.24%, #233F61 100%);
     &:before
         content: ""
         display: block
@@ -657,13 +698,32 @@ li
 
 
 footer
+
     // position: absolute
     position: relative
     display: grid
     justify-content: center
     top: -460px
 
+
+    #kontakt
+        position: relative
+        top: -500px
+
     .footer__contianer
+        
+        &:before
+            position: relative
+            top: -100px
+            content: ""
+            display: block
+            height: 3px
+            width: 90%
+            background: #fff
+            opacity: 0.4
+            margin: 0 auto
+            margin-bottom: 40px
+
         margin-left: 0 auto
         left: 0
         width: 100vw
@@ -674,12 +734,41 @@ footer
             display: flex
             justify-content: space-between
             
-
-
         .contact-card
-            padding: 50px
+            padding: 60px
             color: #fff
-            height: 200px 
-            // background: green
+            height: 250px 
             display: grid
-        
+
+            h2
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 29.2682px;
+                line-height: 34px;
+                letter-spacing: 0.08em;
+
+                color: #FFFFFF;
+
+            p
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20.0696px;
+                line-height: 24px;
+                letter-spacing: 0.15em;
+
+                color: #FFFFFF;
+
+        .footer__bottom-panel
+            color: #ffffff
+            padding: 20px 60px
+            display: flex
+            justify-content: space-between
+
+            p
+                opacity: 0.4
+
+            .footer-logo
+                // background: red
+
