@@ -142,6 +142,11 @@ li {
           user-select: none;
 }
 
+.top-nav__container .top-logo img {
+  padding: 0 30px;
+  width: 100%;
+}
+
 .top-nav__container nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,7 +165,7 @@ li {
 .top-nav__container nav ul li {
   margin-left: 27px;
   font-weight: 600;
-  font-size: 19.1992px;
+  font-size: 17px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.08em;
@@ -550,7 +555,7 @@ li {
 
 .why-section__container #hvorfor {
   position: relative;
-  top: -120px;
+  top: -50px;
 }
 
 .why-section__container h1 {
@@ -769,7 +774,7 @@ li {
 
 .application-section__container #bruk {
   position: relative;
-  top: -120px;
+  top: -100px;
 }
 
 .application-section__container h1 {
@@ -912,5 +917,31 @@ footer .footer__contianer .footer__bottom-panel {
 
 footer .footer__contianer .footer__bottom-panel p {
   opacity: 0.4;
+}
+
+@media (max-width: 1240px) {
+  .to-the-top-btn {
+    background: red;
+  }
+  .to-the-top-btn a {
+    width: 50px;
+    padding: 15px;
+  }
+  .section-h1 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .top-nav__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 71px;
+  }
+  .top-nav__container .top-logo {
+    width: 200px;
+    height: 100%;
+  }
+  .top-nav__container .top-logo img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
