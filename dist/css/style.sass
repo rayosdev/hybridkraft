@@ -14,6 +14,13 @@ body
     // background: #eee
     background: #233F61;
 
+.main-container
+    position: relative;
+    min-height: 100vh;
+
+.content-wrap
+    padding-bottom: 2.5rem; 
+
 a
     text-decoration: none
     color: unset
@@ -67,6 +74,7 @@ li
     font-size: 40px;
     line-height: 47px;
     text-align: center;
+
 
 // ___ Header
 
@@ -723,10 +731,13 @@ li
 footer
 
     // position: absolute
-    position: relative
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;          
     display: grid
     justify-content: center
-    top: -460px
+    top: -700px
 
 
     #kontakt
@@ -754,7 +765,9 @@ footer
         // background: red
 
         .footer__card-contianer
-            display: flex
+            width: 100%
+            display: grid
+            grid-auto-flow: column
             justify-content: space-between
             
         .contact-card
