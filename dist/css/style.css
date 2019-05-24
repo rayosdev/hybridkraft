@@ -165,6 +165,7 @@ li {
 }
 
 .top-nav__container nav ul li .page-active:after {
+  text-transform: uppercase;
   content: "";
   position: relative;
   height: 3px;
