@@ -14,6 +14,15 @@ body {
   background: #233F61;
 }
 
+.main-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;
+}
+
 a {
   text-decoration: none;
   color: unset;
@@ -52,35 +61,6 @@ li {
 
 .to-the-top-btn a img {
   width: 100%;
-}
-
-.action-btn-outlined {
-  background: none;
-  opacity: 0.7;
-  max-width: 300px;
-  min-width: 204.13px;
-  min-height: 49.99px;
-  border: 3px solid #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 21px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19.1992px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.08em;
-  color: #FFFFFF;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.action-btn-outlined:hover {
-  opacity: 0.9;
 }
 
 .section-h1 {
@@ -304,6 +284,37 @@ li {
   width: 204px;
   position: relative;
   z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: none;
+  opacity: 0.7;
+  max-width: 300px;
+  min-width: 204.13px;
+  min-height: 49.99px;
+  border: 3px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.1992px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.top-content__container button:hover {
+  opacity: 0.9;
 }
 
 .top-content__container button a {
@@ -585,9 +596,12 @@ li {
       justify-self: center;
   max-width: 300px;
   padding: 30px;
+  -ms-grid-rows: 189px 32px auto;
+      grid-template-rows: 189px 32px auto;
 }
 
 .why-section .why-card img {
+  height: 169px;
   margin-bottom: 20px;
 }
 
@@ -599,12 +613,21 @@ li {
 .why-section .why-card p {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.08em;
   color: #000000;
   margin-left: 10px;
+}
+
+.why-section .why-card p a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 141.4%;
+  /* or 20px */
+  letter-spacing: 0.08em;
+  color: #237CE3;
 }
 
 .tabel-section {
@@ -834,12 +857,15 @@ li {
 
 footer {
   position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: -460px;
+  top: -700px;
 }
 
 footer #kontakt {
@@ -868,9 +894,10 @@ footer .footer__contianer:before {
 }
 
 footer .footer__contianer .footer__card-contianer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -920,9 +947,6 @@ footer .footer__contianer .footer__bottom-panel p {
 }
 
 @media (max-width: 1240px) {
-  .to-the-top-btn {
-    background: red;
-  }
   .to-the-top-btn a {
     width: 50px;
     padding: 15px;
