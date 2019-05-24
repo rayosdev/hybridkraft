@@ -57,32 +57,7 @@ li
 
 // ___ Prototype
 
-.action-btn-outlined
-    background: none
-    opacity: 0.7;
 
-    max-width: 300px
-    min-width: 204.13px;
-    min-height: 49.99px;
-
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 21px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19.1992px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.08em;
-
-    color: #FFFFFF;
-    cursor: pointer
-    user-select: none
-
-    &:hover
-        opacity: 0.9
 
 .section-h1
     
@@ -132,6 +107,10 @@ li
             height: 71px;
 
             user-select: none
+            
+            img
+                padding: 0 30px
+                width: 100%
 
         nav
             display: flex
@@ -143,7 +122,7 @@ li
                 li
                     margin-left: 27px
                     font-weight: 600;
-                    font-size: 19.1992px;
+                    font-size: 17px;
                     line-height: 23px;
                     text-align: center;
                     letter-spacing: 0.08em;
@@ -260,11 +239,43 @@ li
             color: #6CE861;
 
         button
+            
             margin-top: 60px
             justify-self: center
             width: 204px
             position: relative
             z-index: 1
+            display: grid
+            justify-items: center
+            align-content: center
+
+            background: none
+            opacity: 0.7;
+
+            max-width: 300px
+            min-width: 204.13px;
+            min-height: 49.99px;
+
+            border: 3px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 21px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19.1992px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.08em;
+
+            color: #FFFFFF;
+            cursor: pointer
+            user-select: none
+
+
+
+            &:hover
+                opacity: 0.9
 
             a   
                 display: block
@@ -462,7 +473,7 @@ li
 
         #hvorfor
             position: relative
-            top: -120px
+            top: -50px
         h1
             font-weight: bolder;
             letter-spacing: 0.08em;
@@ -484,8 +495,10 @@ li
         justify-self: center
         max-width: 300px
         padding: 30px
+        grid-template-rows: 189px 32px auto
 
         img
+            height: 169px
             margin-bottom: 20px
         h3
             margin-bottom: 20px
@@ -493,7 +506,7 @@ li
         p
             font-family: Raleway;
             font-style: normal;
-            font-weight: bold;
+            font-weight: 400;
             font-size: 14px;
             line-height: 20px;
             letter-spacing: 0.08em;
@@ -501,6 +514,16 @@ li
             color: #000000;
 
             margin-left: 10px
+
+            a
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 141.4%;
+                /* or 20px */
+
+                letter-spacing: 0.08em;
+
+                color: #237CE3;
 
 .tabel-section
     background: #fff
@@ -645,7 +668,7 @@ li
         
         #bruk
             position: relative
-            top: -120px
+            top: -100px
 
         h1  
             padding: 20px
@@ -772,3 +795,35 @@ footer
             .footer-logo
                 // background: red
 
+
+@media (max-width: 1240px)
+    .to-the-top-btn
+        // background: red
+
+    .to-the-top-btn
+
+        a
+            width: 50px
+            padding: 15px
+
+
+    .section-h1
+        font-size: 30px;
+        line-height: 37px;
+
+
+    // ___ Navigation
+
+    .top-nav
+
+        &__container
+            max-width: 1000px
+            margin: 0 auto
+            min-height: 71px
+
+            .top-logo
+                width: 200px;
+                height: 100%
+
+                img
+                    width: 100%

@@ -54,35 +54,6 @@ li {
   width: 100%;
 }
 
-.action-btn-outlined {
-  background: none;
-  opacity: 0.7;
-  max-width: 300px;
-  min-width: 204.13px;
-  min-height: 49.99px;
-  border: 3px solid #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 21px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19.1992px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.08em;
-  color: #FFFFFF;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.action-btn-outlined:hover {
-  opacity: 0.9;
-}
-
 .section-h1 {
   font-family: Raleway;
   font-style: normal;
@@ -142,6 +113,11 @@ li {
           user-select: none;
 }
 
+.top-nav__container .top-logo img {
+  padding: 0 30px;
+  width: 100%;
+}
+
 .top-nav__container nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,7 +136,7 @@ li {
 .top-nav__container nav ul li {
   margin-left: 27px;
   font-weight: 600;
-  font-size: 19.1992px;
+  font-size: 17px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.08em;
@@ -299,6 +275,37 @@ li {
   width: 204px;
   position: relative;
   z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: none;
+  opacity: 0.7;
+  max-width: 300px;
+  min-width: 204.13px;
+  min-height: 49.99px;
+  border: 3px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.1992px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.top-content__container button:hover {
+  opacity: 0.9;
 }
 
 .top-content__container button a {
@@ -550,7 +557,7 @@ li {
 
 .why-section__container #hvorfor {
   position: relative;
-  top: -120px;
+  top: -50px;
 }
 
 .why-section__container h1 {
@@ -580,9 +587,12 @@ li {
       justify-self: center;
   max-width: 300px;
   padding: 30px;
+  -ms-grid-rows: 189px 32px auto;
+      grid-template-rows: 189px 32px auto;
 }
 
 .why-section .why-card img {
+  height: 169px;
   margin-bottom: 20px;
 }
 
@@ -594,12 +604,21 @@ li {
 .why-section .why-card p {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.08em;
   color: #000000;
   margin-left: 10px;
+}
+
+.why-section .why-card p a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 141.4%;
+  /* or 20px */
+  letter-spacing: 0.08em;
+  color: #237CE3;
 }
 
 .tabel-section {
@@ -769,7 +788,7 @@ li {
 
 .application-section__container #bruk {
   position: relative;
-  top: -120px;
+  top: -100px;
 }
 
 .application-section__container h1 {
@@ -912,5 +931,28 @@ footer .footer__contianer .footer__bottom-panel {
 
 footer .footer__contianer .footer__bottom-panel p {
   opacity: 0.4;
+}
+
+@media (max-width: 1240px) {
+  .to-the-top-btn a {
+    width: 50px;
+    padding: 15px;
+  }
+  .section-h1 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .top-nav__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 71px;
+  }
+  .top-nav__container .top-logo {
+    width: 200px;
+    height: 100%;
+  }
+  .top-nav__container .top-logo img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
