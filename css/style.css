@@ -287,9 +287,6 @@ li {
   z-index: 1;
   display: -ms-grid;
   display: grid;
-  justify-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   background: none;
   opacity: 0.7;
   max-width: 300px;
@@ -319,11 +316,16 @@ li {
 }
 
 .top-content__container button a {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100%;
   height: 100%;
-  margin: auto auto;
-  background: red;
+  min-height: 48px;
 }
 
 .top-section {
