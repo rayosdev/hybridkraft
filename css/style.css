@@ -134,6 +134,8 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  top: 10px;
 }
 
 .top-nav__container nav ul {
@@ -149,7 +151,7 @@ li {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.08em;
-  color: #58C84E;
+  color: #237BE3;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,10 +438,10 @@ li {
 .top-section__container h4 {
   font-family: Raleway;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
   line-height: 158%;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.17em;
   /* or 38px */
   margin-top: 30px;
   -ms-grid-column-align: center;
@@ -556,6 +558,15 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+.card-section__container .card a {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4B84C8;
 }
 
 .why-section {
@@ -931,9 +942,15 @@ footer .footer__contianer .contact-card p {
   font-style: normal;
   font-weight: 500;
   font-size: 20.0696px;
-  line-height: 24px;
+  line-height: 34px;
   letter-spacing: 0.15em;
   color: #FFFFFF;
+}
+
+footer .footer__contianer .contact-card a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(255, 255, 255, 0.6);
+          text-decoration-color: rgba(255, 255, 255, 0.6);
 }
 
 footer .footer__contianer .footer__bottom-panel {
