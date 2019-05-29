@@ -1,6 +1,7 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
+
 *
     padding: 0
     margin: 0
@@ -83,6 +84,9 @@ li
     height: 32px;
     background: #4B84C8;
 
+    @media (max-width: 1240px)
+        background: red
+
     &__container
         height: 100%
         max-width: 1440px
@@ -98,6 +102,9 @@ li
             font-size: 18px;
 
             color: #FFFFFF;
+    
+    // @media (max-width: 1240px)
+        
 
 .top-nav
     background: #fff
@@ -109,7 +116,7 @@ li
         margin: 0 auto
 
         .top-logo
-            margin-top: 15px
+            // margin-top: 15px
             margin-left: 28px
             width: 333.57px;
             height: 71px;
@@ -124,7 +131,7 @@ li
             display: flex
             justify-content: space-between;
             position: relative
-            top: 10px
+            top: 0.5vw
 
             ul
                 display: flex
@@ -141,6 +148,19 @@ li
 
                     height: 100%
                     display: flex
+
+                    &:hover
+                        opacity: 0.5
+                        
+
+                    @media (max-width: 1240px)
+                        font-size: 14px
+
+                        button
+                            font-size: 14px
+
+
+
 
                     a
                         display: grid
@@ -170,17 +190,20 @@ li
                         cursor: pointer
 
                         font-style: normal;
-                        font-weight: 600;
-                        font-size: 19.1992px;
+                        font-weight: 400;
+                        font-size: 18px;
                         line-height: 23px;
                         text-align: center;
                         letter-spacing: 0.08em;
 
                         text-align: center
+                        transition: all 0.2s
 
                         &:hover
                             background: #dddddd
                             color: #237BE3
+                            font-weight: 600
+                            transition: all 0.2s
 
 .top-content
 
@@ -826,34 +849,34 @@ footer
 
 
 
-@media (max-width: 1240px)
-    .to-the-top-btn
-        // background: red
+// @media (max-width: 1240px)
+//     .to-the-top-btn
+//         // background: red
 
-    .to-the-top-btn
+//     .to-the-top-btn
 
-        a
-            width: 50px
-            padding: 15px
-
-
-    .section-h1
-        font-size: 30px;
-        line-height: 37px;
+//         a
+//             width: 50px
+//             padding: 15px
 
 
-    // ___ Navigation
+//     .section-h1
+//         font-size: 30px;
+//         line-height: 37px;
 
-    .top-nav
 
-        &__container
-            max-width: 1000px
-            margin: 0 auto
-            min-height: 71px
+//     // ___ Navigation
 
-            .top-logo
-                width: 200px;
-                height: 100%
+//     .top-nav
 
-                img
-                    width: 100%
+//         &__container
+//             max-width: 1000px
+//             margin: 0 auto
+//             min-height: 71px
+
+//             .top-logo
+//                 width: 200px;
+//                 height: 100%
+
+//                 img
+//                     width: 100%

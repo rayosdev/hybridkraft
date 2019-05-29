@@ -77,6 +77,12 @@ li {
   background: #4B84C8;
 }
 
+@media (max-width: 1240px) {
+  .top-bar {
+    background: red;
+  }
+}
+
 .top-bar__container {
   height: 100%;
   max-width: 1440px;
@@ -112,7 +118,6 @@ li {
 }
 
 .top-nav__container .top-logo {
-  margin-top: 15px;
   margin-left: 28px;
   width: 333.57px;
   height: 71px;
@@ -135,7 +140,7 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  top: 10px;
+  top: 0.5vw;
 }
 
 .top-nav__container nav ul {
@@ -156,6 +161,19 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.top-nav__container nav ul li:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 1240px) {
+  .top-nav__container nav ul li {
+    font-size: 14px;
+  }
+  .top-nav__container nav ul li button {
+    font-size: 14px;
+  }
 }
 
 .top-nav__container nav ul li a {
@@ -193,17 +211,22 @@ li {
   border: none;
   cursor: pointer;
   font-style: normal;
-  font-weight: 600;
-  font-size: 19.1992px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.08em;
   text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .top-nav__container nav ul li button:hover {
   background: #dddddd;
   color: #237BE3;
+  font-weight: 600;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .top-content {
@@ -966,28 +989,5 @@ footer .footer__contianer .footer__bottom-panel {
 
 footer .footer__contianer .footer__bottom-panel p {
   opacity: 0.4;
-}
-
-@media (max-width: 1240px) {
-  .to-the-top-btn a {
-    width: 50px;
-    padding: 15px;
-  }
-  .section-h1 {
-    font-size: 30px;
-    line-height: 37px;
-  }
-  .top-nav__container {
-    max-width: 1000px;
-    margin: 0 auto;
-    min-height: 71px;
-  }
-  .top-nav__container .top-logo {
-    width: 200px;
-    height: 100%;
-  }
-  .top-nav__container .top-logo img {
-    width: 100%;
-  }
 }
 /*# sourceMappingURL=style.css.map */
