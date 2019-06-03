@@ -117,21 +117,6 @@ li {
   margin: 0 auto;
 }
 
-.top-nav__container .top-logo {
-  margin-left: 28px;
-  width: 333.57px;
-  height: 71px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.top-nav__container .top-logo img {
-  padding: 0 30px;
-  width: 100%;
-}
-
 .top-nav__container nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,7 +125,25 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  top: 0.5vw;
+}
+
+.top-nav__container nav .top-logo {
+  margin-left: 28px;
+  max-width: 300px;
+  height: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.top-nav__container nav img {
+  margin-top: 3px;
+  padding: 0 30px;
+  width: 100%;
 }
 
 .top-nav__container nav ul {
@@ -284,7 +287,7 @@ li {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 55px;
+  font-size: 40px;
   line-height: 64px;
   text-align: center;
   letter-spacing: 0.08em;
@@ -296,11 +299,12 @@ li {
   margin-top: 32px;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.08em;
   color: #6CE861;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .top-content__container button {
@@ -315,8 +319,6 @@ li {
   background: none;
   opacity: 0.7;
   max-width: 300px;
-  min-width: 204.13px;
-  min-height: 49.99px;
   border: 3px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -324,7 +326,7 @@ li {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 19.1992px;
+  font-size: 18px;
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.08em;
@@ -555,9 +557,29 @@ li {
   text-align: center;
 }
 
+@media (max-width: 1240px) {
+  .card-section__container .card {
+    max-width: 320px;
+    -ms-grid-rows: 90px auto;
+        grid-template-rows: 90px auto;
+  }
+  .card-section__container .card h1 {
+    width: 100% !important;
+    font-size: 50px !important;
+    line-height: 71px !important;
+  }
+  .card-section__container .card p {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px;
+    font-size: 16px !important;
+  }
+  .card-section__container .card a {
+    font-size: 16px !important;
+  }
+}
+
 .card-section__container .card h1 {
-  width: 238.14px;
-  height: 69.21px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;

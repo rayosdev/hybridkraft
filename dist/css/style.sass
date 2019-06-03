@@ -115,23 +115,26 @@ li
         max-width: 1440px
         margin: 0 auto
 
-        .top-logo
-            // margin-top: 15px
-            margin-left: 28px
-            width: 333.57px;
-            height: 71px;
-
-            user-select: none
-            
-            img
-                padding: 0 30px
-                width: 100%
-
         nav
             display: flex
             justify-content: space-between;
             position: relative
-            top: 0.5vw
+            // top: 0.5vw
+
+            .top-logo
+                // margin-top: 15px
+                margin-left: 28px
+                max-width: 300px
+                height: 71px;
+                display: flex
+
+                user-select: none
+            
+            img
+                margin-top: 3px
+                padding: 0 30px
+                width: 100%
+
 
             ul
                 display: flex
@@ -205,6 +208,8 @@ li
                             font-weight: 600
                             transition: all 0.2s
 
+// --continue here
+
 .top-content
 
     width: 100%
@@ -248,12 +253,17 @@ li
         #oss
             position: relative
             top: -20px
+        
+        @media (max-width: 1240px)
+            
+            h1
+
 
         h1
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 55px;
+            font-size: 40px;
             line-height: 64px;
             text-align: center;
             letter-spacing: 0.08em;
@@ -266,11 +276,12 @@ li
             margin-top: 32px
             font-style: normal;
             font-weight: bold;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 28px;
             text-align: center;
             letter-spacing: 0.08em;
             color: #6CE861;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         button
             
@@ -285,8 +296,8 @@ li
             opacity: 0.7;
 
             max-width: 300px
-            min-width: 204.13px;
-            min-height: 49.99px;
+            // min-width: 180px;
+            // min-height: 40px;
 
             border: 3px solid #FFFFFF;
             box-sizing: border-box;
@@ -295,7 +306,7 @@ li
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 19.1992px;
+            font-size: 18px;
             line-height: 22px;
             text-align: center;
             letter-spacing: 0.08em;
@@ -467,9 +478,27 @@ li
             border-radius: 29px;
             text-align: center
 
+            @media (max-width: 1240px)
+                max-width: 320px
+                grid-template-rows: 90px auto
+
+                h1
+                    width: 100%!important
+                    font-size: 50px!important
+                    line-height: 71px!important
+
+                p
+                    width: 100%!important
+                    margin: 0!important
+                    padding: 20px
+                    font-size: 16px!important
+
+                a
+                    font-size: 16px!important
+
+
+
             h1
-                width: 238.14px;
-                height: 69.21px;
 
                 font-family: Roboto;
                 font-style: normal;
