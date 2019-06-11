@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  scroll-behavior: smooth;
   font-family: Raleway;
   background: #233F61;
 }
@@ -83,6 +84,12 @@ li {
   }
 }
 
+@media (max-width: 411px) {
+  .top-bar {
+    background: pink;
+  }
+}
+
 .top-bar__container {
   height: 100%;
   max-width: 1440px;
@@ -95,14 +102,10 @@ li {
           justify-content: flex-end;
 }
 
-.top-bar__container a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  font-size: 18px;
-  color: #FFFFFF;
+@media (max-width: 411px) {
+  .top-bar__container {
+    width: 100% !important;
+  }
 }
 
 .top-nav {
@@ -152,6 +155,15 @@ li {
   display: flex;
 }
 
+@media (max-width: 411px) {
+  .top-nav__container nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .top-nav__container nav ul li {
   margin-left: 27px;
   font-weight: 600;
@@ -172,9 +184,6 @@ li {
 
 @media (max-width: 1240px) {
   .top-nav__container nav ul li {
-    font-size: 14px;
-  }
-  .top-nav__container nav ul li button {
     font-size: 14px;
   }
 }
@@ -215,7 +224,7 @@ li {
   cursor: pointer;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.08em;
@@ -230,6 +239,12 @@ li {
   font-weight: 600;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media (max-width: 1240px) {
+  .top-nav__container nav ul li button {
+    font-size: 14px;
+  }
 }
 
 .top-content {
@@ -389,6 +404,16 @@ li {
   grid-gap: 25px;
 }
 
+@media (max-width: 411px) {
+  .top-section__container {
+        grid-template-areas: "cHead" "cNatu" "cPar1" "cElec" "cPar2" "cEnd";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+    width: 100%;
+  }
+}
+
 .top-section__container #cPlug {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -458,6 +483,12 @@ li {
 .top-section__container .graphic-plug {
   position: relative;
   left: 30px;
+}
+
+@media (max-width: 411px) {
+  .top-section__container .graphic-plug {
+    display: none;
+  }
 }
 
 .top-section__container h4 {
@@ -541,6 +572,15 @@ li {
           justify-content: space-between;
 }
 
+@media (max-width: 411px) {
+  .card-section__container .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .card-section__container .card {
   position: relative;
   display: -ms-grid;
@@ -576,6 +616,12 @@ li {
   }
   .card-section__container .card a {
     font-size: 16px !important;
+  }
+}
+
+@media (max-width: 411px) {
+  .card-section__container .card {
+    margin-bottom: 30px;
   }
 }
 
@@ -648,6 +694,13 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 411px) {
+  .why-section .why-card-contanier {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .why-section .why-card {

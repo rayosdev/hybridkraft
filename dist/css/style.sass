@@ -11,6 +11,7 @@ html
     scroll-behavior: smooth;
 
 body
+    scroll-behavior: smooth;
     font-family: Raleway;
     // background: #eee
     background: #233F61;
@@ -84,8 +85,13 @@ li
     height: 32px;
     background: #4B84C8;
 
+
     @media (max-width: 1240px)
         background: red
+
+    //__ Mobile size
+    @media (max-width: 411px)
+        background: pink
 
     &__container
         height: 100%
@@ -94,14 +100,10 @@ li
         display: flex
         justify-content: flex-end
 
-        a
-            display: flex
-            align-self: center
-            // margin-right: 20px
+        //__ Mobile size
+        @media (max-width: 411px)
+            width: 100%!important
 
-            font-size: 18px;
-
-            color: #FFFFFF;
     
     // @media (max-width: 1240px)
         
@@ -139,6 +141,10 @@ li
             ul
                 display: flex
 
+                //__ Mobile size
+                @media (max-width: 411px)
+                    flex-direction: column
+                
                 li
                     margin-left: 27px
                     font-weight: 600;
@@ -158,10 +164,6 @@ li
 
                     @media (max-width: 1240px)
                         font-size: 14px
-
-                        button
-                            font-size: 14px
-
 
 
 
@@ -194,7 +196,7 @@ li
 
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 18px;
+                        font-size: 17px;
                         line-height: 23px;
                         text-align: center;
                         letter-spacing: 0.08em;
@@ -207,6 +209,9 @@ li
                             color: #237BE3
                             font-weight: 600
                             transition: all 0.2s
+
+                        @media (max-width: 1240px)
+                            font-size: 14px
 
 // --continue here
 
@@ -357,6 +362,14 @@ li
         grid-template-columns: 1fr 3fr 1fr
         grid-gap: 25px
 
+        //__ Mobile size
+        @media (max-width: 411px)
+            grid-template-areas: "cHead" "cNatu" "cPar1" "cElec" "cPar2" "cEnd";
+            grid-template-columns: 1fr
+            grid-gap: 20px
+            width: 100%
+            
+
         #cPlug 
             grid-area: cPlug;
         #cHead 
@@ -392,8 +405,10 @@ li
         .graphic-plug
             position: relative
             left: 30px
-            // border: solid red 3px
 
+            //__ Mobile size
+            @media (max-width: 411px)
+                display: none
         h4
             font-family: Raleway;
             font-style: italic;
@@ -464,6 +479,10 @@ li
             display: flex
             justify-content: space-between
 
+            //__ Mobile size
+            @media (max-width: 411px)
+                flex-direction: column
+
         .card
             position: relative
             display: grid
@@ -478,6 +497,7 @@ li
             border-radius: 29px;
             text-align: center
 
+            //__ Smaller Desktops
             @media (max-width: 1240px)
                 max-width: 320px
                 grid-template-rows: 90px auto
@@ -496,6 +516,10 @@ li
                 a
                     font-size: 16px!important
 
+
+            //__ Mobile size
+            @media (max-width: 411px)
+                margin-bottom: 30px
 
 
             h1
@@ -562,6 +586,11 @@ li
         display: grid
         grid-template-columns: repeat(4, 1fr)
         justify-content: center
+
+        //__ Mobile size
+        @media (max-width: 411px)
+            grid-template-columns: 1fr
+
 
     .why-card
         display: grid
@@ -810,7 +839,7 @@ footer
         top: -500px
 
     .footer__contianer
-        
+
         &:before
             position: relative
             top: -100px
