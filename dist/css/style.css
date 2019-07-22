@@ -84,7 +84,13 @@ li {
   }
 }
 
-@media (max-width: 411px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  .top-bar {
+    background: green;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
   .top-bar {
     background: pink;
   }
@@ -763,6 +769,16 @@ li {
       align-content: center;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .tabel-section__container {
+    max-width: 480px;
+    min-width: 320px;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-top: -10px;
+  }
+}
+
 .tabel-section table {
   position: relative;
   top: -120px;
@@ -928,6 +944,12 @@ li {
   letter-spacing: 0.08em;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .application-section__container h1 {
+    font-size: 30px;
+  }
+}
+
 .application-section ul {
   margin-top: 40px;
   display: -ms-grid;
@@ -936,6 +958,14 @@ li {
       grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   grid-row-gap: 60px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .application-section ul {
+    grid-row-gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .application-section ul li {
@@ -967,6 +997,13 @@ li {
   text-align: center;
   color: #fff;
   background: rgba(0, 0, 0, 0.812);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .application-section ul li h3 {
+    font-size: 12px;
+    height: 60px;
+  }
 }
 
 footer {

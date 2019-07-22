@@ -90,7 +90,10 @@ li
         background: red
 
     //__ Mobile size
-    @media (max-width: 411px)
+    @media (min-width: 481px) and (max-width: 767px)
+        background: green
+
+    @media (min-width: 320px) and (max-width: 480px)
         background: pink
 
     &__container
@@ -631,6 +634,10 @@ li
     background: #fff
     position: relative
     top: -590px
+
+    @media (min-width: 320px) and (max-width: 480px)
+        // top: 0
+
     
     &__container
         max-width: 1440px
@@ -639,6 +646,13 @@ li
         display: grid
         justify-content: center
         align-content: center
+
+
+        @media (min-width: 320px) and (max-width: 480px)
+            max-width: 480px
+            min-width: 320px
+            transform: scale(0.4)
+            margin-top: -10px
 
     table
         position: relative
@@ -768,6 +782,10 @@ li
         position: relative
         top: -280px
         
+        // __Mobile small
+        // @media (min-width: 320px) and (max-width: 480px)
+        //     transform: scale(0.4)
+        
         #bruk
             position: relative
             top: -100px
@@ -786,6 +804,10 @@ li
             line-height: 47px;
             text-align: center;
             letter-spacing: 0.08em;
+
+            // __Mobile small
+            @media (min-width: 320px) and (max-width: 480px)
+                font-size: 30px
     
     ul
         margin-top: 40px
@@ -794,8 +816,18 @@ li
         justify-items: center
         grid-row-gap: 60px
 
+        // __Mobile small
+        @media (min-width: 320px) and (max-width: 480px)
+            grid-row-gap: 20px
+            grid-template-columns: 1fr 1fr
+
+
         li
             max-width: 337px
+
+            // __Mobile small
+            // @media (min-width: 320px) and (max-width: 480px)
+            //     margin: 0 5px
 
             img
                 width: 100%
@@ -820,6 +852,11 @@ li
                 text-align: center
                 color: #fff
                 background: rgba(0, 0, 0, 0.812);
+
+                // __Mobile small
+                @media (min-width: 320px) and (max-width: 480px)
+                    font-size: 12px
+                    height: 60px
 
 
 footer

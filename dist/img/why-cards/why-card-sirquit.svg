@@ -1,22 +1,22 @@
 <svg width="247" height="169" viewBox="0 0 247 169" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="246.531" height="168.154" rx="13" fill="#58C84E"/>
-<circle cx="62.4052" cy="94.9541" r="9.40522" transform="rotate(-90 62.4052 94.9541)" fill="black"/>
+<circle cx="62.4052" cy="94.9541" r="9.40522" transform="rotate(-90 62.4052 94.9541)" fill="#233F61"/>
 <circle cx="62.4051" cy="94.9538" r="5.98514" transform="rotate(-90 62.4051 94.9538)" fill="white"/>
-<rect x="69.3037" y="97.0959" width="4.75486" height="50.945" transform="rotate(-90 69.3037 97.0959)" fill="black"/>
-<rect x="104.624" y="89.6243" width="4.75486" height="16.3024" transform="rotate(-90 104.624 89.6243)" fill="black"/>
-<rect x="97.1523" y="105.927" width="4.75486" height="23.7743" transform="rotate(-90 97.1523 105.927)" fill="black"/>
-<rect x="186.815" y="113.399" width="4.75486" height="25.1328" transform="rotate(180 186.815 113.399)" fill="black"/>
-<circle cx="184.673" cy="120.766" r="9.40522" transform="rotate(180 184.673 120.766)" fill="black"/>
+<rect x="69.3037" y="97.0959" width="4.75486" height="50.945" transform="rotate(-90 69.3037 97.0959)" fill="#233F61"/>
+<rect x="104.624" y="89.6243" width="4.75486" height="16.3024" transform="rotate(-90 104.624 89.6243)" fill="#233F61"/>
+<rect x="97.1523" y="105.927" width="4.75486" height="23.7743" transform="rotate(-90 97.1523 105.927)" fill="#233F61"/>
+<rect x="186.815" y="113.399" width="4.75486" height="25.1328" transform="rotate(180 186.815 113.399)" fill="#233F61"/>
+<circle cx="184.673" cy="120.766" r="9.40522" transform="rotate(180 184.673 120.766)" fill="#233F61"/>
 <circle cx="184.673" cy="120.766" r="5.98514" transform="rotate(180 184.673 120.766)" fill="white"/>
-<rect x="182.06" y="88.2661" width="25.1328" height="4.75486" transform="rotate(180 182.06 88.2661)" fill="black"/>
-<path d="M186.815 88.2661L182.061 88.2661L182.061 83.5113V83.5113C184.687 83.5113 186.815 85.6401 186.815 88.2661V88.2661Z" fill="black"/>
-<circle r="9.40522" transform="matrix(4.37114e-08 1 1 -4.37114e-08 97.0488 47.4052)" fill="black"/>
+<rect x="182.06" y="88.2661" width="25.1328" height="4.75486" transform="rotate(180 182.06 88.2661)" fill="#233F61"/>
+<path d="M186.815 88.2661L182.061 88.2661L182.061 83.5113V83.5113C184.687 83.5113 186.815 85.6401 186.815 88.2661V88.2661Z" fill="#233F61"/>
+<circle r="9.40522" transform="matrix(4.37114e-08 1 1 -4.37114e-08 97.0488 47.4052)" fill="#233F61"/>
 <circle r="5.98514" transform="matrix(4.37114e-08 1 1 -4.37114e-08 97.0486 47.4048)" fill="white"/>
-<rect width="4.75486" height="25.1328" transform="matrix(4.37114e-08 1 1 -4.37114e-08 104.626 44.7925)" fill="black"/>
-<rect width="25.1328" height="4.75486" transform="matrix(4.37114e-08 1 1 -4.37114e-08 129.759 49.5474)" fill="black"/>
-<rect width="25.1328" height="4.75486" transform="matrix(4.37114e-08 1 1 -4.37114e-08 137.909 49.5474)" fill="black"/>
-<rect width="25.1328" height="4.75486" transform="matrix(4.37114e-08 1 1 -4.37114e-08 147.419 49.5474)" fill="black"/>
-<path d="M129.759 44.7925L129.759 49.5473L134.514 49.5473V49.5473C134.514 46.9213 132.385 44.7925 129.759 44.7925V44.7925Z" fill="black"/>
-<rect x="120.248" y="74.6802" width="36.6804" height="36.6804" rx="4.76666" fill="black"/>
+<rect width="4.75486" height="25.1328" transform="matrix(4.37114e-08 1 1 -4.37114e-08 104.626 44.7925)" fill="#233F61"/>
+<rect width="25.1328" height="4.75486" transform="matrix(4.37114e-08 1 1 -4.37114e-08 129.759 49.5474)" fill="#233F61"/>
+<rect width="25.1328" height="4.75486" transform="matrix(4.37114e-08 1 1 -4.37114e-08 137.909 49.5474)" fill="#233F61"/>
+<rect width="25.1328" height="4.75486" transform="matrix(4.37114e-08 1 1 -4.37114e-08 147.419 49.5474)" fill="#233F61"/>
+<path d="M129.759 44.7925L129.759 49.5473L134.514 49.5473V49.5473C134.514 46.9213 132.385 44.7925 129.759 44.7925V44.7925Z" fill="#233F61"/>
+<rect x="120.248" y="74.6802" width="36.6804" height="36.6804" rx="4.76666" fill="#233F61"/>
 <rect x="125.85" y="80.2812" width="25.4784" height="25.4784" rx="3.31096" fill="white"/>
 </svg>
