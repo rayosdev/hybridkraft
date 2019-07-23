@@ -15,35 +15,41 @@
 <body>
 
 <div id="top-anker"></div>
-<div id="toTopBtn" class="to-the-top-btn">
-    <a href="#top-anker">
-        <img src="img/to-top.svg" alt="">
+<div id="toTopBtn" class="to-top-btn__container">
+    <a href="#top-anker" class="to-top-btn__link-tag">
+        <img src="img/to-top.svg" alt="" class="to-top-btn__graphic">
     </a>
 </div>
 
 <div class="main-container">
-    <div class="content-contianer">
-
     
-    <header>
-        <div class="top-bar">
-            <div class="top-bar__container">
-            </div>
+    <header class="header__container">
+        <div class="header__top-bar"></div>
+        <div class="header__nav-container">
+            <nav class="header__nav-content-container">
+                <a class="header__nav-logo" href="">
+                    <img src="img/top-Logo.svg" alt="" class="header__nav-logo-image">
+                </a>
+                <ul class="header__nav-link-container">
+                    <!-- <li><a class="page-active" href="#">HJEM</a></li> -->
+                    <li class="header__nav-link-item">
+                        <a class="header__nav-link-item-tag" href="#hva-anker">HVA</a>
+                    </li>
+                    <li class="header__nav-link-item">
+                        <a class="header__nav-link-item-tag" href="#hvorfor-anker">HVORFOR</a>
+                    </li>
+                    <li class="header__nav-link-item">
+                        <a class="header__nav-link-item-tag" href="#bruk-anker">ANVENDELSER</a>
+                    </li>
+                    <li class="header__nav-link-item">
+                        <a class="header__nav-link-item-tag" href="#oss-anker">OM OSS</a>
+                    </li>
+                    <li class="header__nav-link-item">
+                        <a class="header__nav-link-item-btn header__nav-link-item-tag" href="#kontakt-anker">KONTAKT</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="top-nav">
-            <div class="top-nav__container">
-                <nav>
-                    <a class="top-logo" href=""><img src="img/top-Logo.svg" alt=""></a>
-                    <ul>
-                        <!-- <li><a class="page-active" href="#">HJEM</a></li> -->
-                        <li><a class="" href="#hva-anker">HVA</a></li>
-                        <li><a class="" href="#hvorfor-anker">HVORFOR</a></li>
-                        <li><a class="" href="#bruk-anker">ANVENDELSER</a></li>
-                        <li><a class="" href="#oss-anker">OM OSS</a></li>
-                        <li><button><a href="#kontakt-anker">KONTAKT</a></button></li>
-                    </ul>
-                </nav>
-            </div>
         </div>
         <div class="top-content">
             <img class="top-content__bend" src="img/header-bend-top.png" alt="" class="top-content-area__top-bend">   
@@ -258,7 +264,6 @@
             </ul>
         </div>
     </section>
-    </div>
     <footer>
         <div id="kontakt-anker"></div>
         <div class="footer__contianer">

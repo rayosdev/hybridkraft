@@ -1,5 +1,31 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+// $font-stack:    Helvetica, sans-serif;
+// $primary-color: #333;
+
+
+
+    // @media (max-width: 1240px)
+    //     background: red
+
+    //__ Mobile size
+    // @media (min-width: 481px) and (max-width: 767px)
+    //     background: green
+
+    // @media (min-width: 320px) and (max-width: 480px)
+    //     background: pink
+
+    // &__container
+    //     height: 100%
+    //     max-width: 1440px
+    //     margin: 0 auto
+    //     display: flex
+    //     justify-content: flex-end
+
+        //__ Mobile size
+        // @media (max-width: 411px)
+        //     width: 100%!important
+
+    
+    // @media (max-width: 1240px)
 
 
 *
@@ -13,15 +39,7 @@ html
 body
     scroll-behavior: smooth;
     font-family: Raleway;
-    // background: #eee
     background: #233F61;
-
-.main-container
-    position: relative;
-    min-height: 100vh;
-
-.content-wrap
-    padding-bottom: 2.5rem; 
 
 a
     text-decoration: none
@@ -30,86 +48,98 @@ a
 li
     list-style: none
 
+img
+    width: 100%
 
-
+//__ Specials
 .debug
     border: solid 1px red!important
 
-// .main-container
-//     max-width: 1440px
-//     margin: 0 auto
-
-
-
-// __ Specials
-
-.hiden
+.hidden
     opacity: 0
     transition: all 0.5s
+  
+.to-top-btn
 
-.to-the-top-btn
-    transition: all 0.5s
-    position: fixed
-    bottom: 40px
-    right: 40px
-    z-index: 999
+    &__container
+        transition: all 0.5s
+        position: fixed
+        bottom: 40px
+        right: 40px
+        z-index: 999
     
-    a
+    &__link-tag
         display: block
         width: 70px
         background: rgba(0,122,122,0.5)
         padding: 22px
         border-radius: 100%
 
-        img
-            width: 100%
+    &__graphic
+        width: 100%
 
-// ___ Prototype
+//__ Website starts
 
+.main-container
+    // min-height: 1vh
+    // padding-bottom: 2.5rem;
 
-
-.section-h1
-    
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
-
-
-// ___ Header
-
-.top-bar
-
-    height: 32px;
-    background: #4B84C8;
-
-
-    @media (max-width: 1240px)
-        background: red
-
-    //__ Mobile size
-    @media (min-width: 481px) and (max-width: 767px)
-        background: green
-
-    @media (min-width: 320px) and (max-width: 480px)
-        background: pink
+.header
 
     &__container
-        height: 100%
+
+    &__top-bar
+
+        height: 32px;
+        background: #4B84C8;
+
+    &__nav-container
+        background: #fff
+        // height: 2vw
+
+    &__nav-content-container
+        position: relative
+        top: 10px
+        z-index: 1000000 //midlertidig
         max-width: 1440px
         margin: 0 auto
         display: flex
-        justify-content: flex-end
+        justify-content: space-between
 
-        //__ Mobile size
-        @media (max-width: 411px)
-            width: 100%!important
-
+        @media (min-width: 1025px) and (max-width: 1500px)
+            // background: red!important
+            // top: -10px
     
-    // @media (max-width: 1240px)
-        
+    &__nav-logo
+        max-width: 11rem
+        margin-left: 2%
+
+    &__nav-link-container
+        display: flex
+        justify-content: space-around
+        min-width: 30vw
+        margin-right: 2%
+
+    &__nav-link-item
+        margin-left: 27px
+        font-weight: 600;
+        font-size: 0.85em;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.08em;
+
+        // color: #237BE3;
+        color: #233F61
+
+        height: 100%
+        display: flex
+
+        &:hover
+            opacity: 0.5
+
+    &__nav-link-item-btn
+
+
 
 .top-nav
     background: #fff
@@ -223,7 +253,7 @@ li
     width: 100%
     z-index: 1
     position: relative
-    min-height: 500px
+    // min-height: 500px
     background: #000
     top: -50px
 
@@ -424,6 +454,17 @@ li
             margin-top: 30px;
             justify-self: center
             text-align: center
+
+.section-h1
+    
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+
+
 
 
 .sky-section

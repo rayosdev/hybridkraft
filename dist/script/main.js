@@ -11,10 +11,10 @@ window.addEventListener("scroll", e => {
 
 function showHideToTopBtn(){
     if(window.scrollY < 40){
-        if(!toTopBtn.classList.contains("hiden")){
-            toTopBtn.classList.add("hiden")
+        if(!toTopBtn.classList.contains("hidden")){
+            toTopBtn.classList.add("hidden")
         }
     }else{
-        toTopBtn.classList.remove("hiden")
+        toTopBtn.classList.remove("hidden")
     }
 }
