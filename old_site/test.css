@@ -1,0 +1,77 @@
+/* 
+    Clear styling
+  */
+ html * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: #f8f8f8;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* 
+    Typography
+ */
+h1{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.main-container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+header{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background: #ffc3c3;
+    padding: 2em 0;
+    margin-top: 2em;
+}
+@media (min-width: 600px){
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.header__text-container{
+}
+.header-text__title{
+    color: #143774;
+}
+.header-text__subtitle{
+    font-weight: bold;
+    font-size: .75rem;
+    color: #1792d2;
+    margin-top: 1em;
+}
+.header__navigation{
+    margin-top: 1em;
+}
+.header-nav__list-container{
+    display: flex;
+    justify-content: space-around;
+}
+.header-nav__list-item{
+    margin: 0 .75em;
+}
+.header-nav__list-item-link{
+    color: #707070;
+    font-size: .75rem;
+    font-weight: 700;
+}
+.header-nav__list-item-link:hover,
+.header-nav__list-item-link:focus{
+    color: #1792d2;
+}
+.header-nav__list-item-link--active{
+    border-bottom:solid 2px #707070;
+    padding-bottom: 0.25em;
+}
+.header-nav__list-item-link--active:hover{
+    color: #707070;
+}
