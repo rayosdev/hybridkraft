@@ -21,35 +21,39 @@
     </a>
 </div> <!--To the top button-->
 
-<div class="container">
+<div class="main-container">
     
     <header class="header">
-        <div class="top-bar"></div>
-            <div class="header__nav-container">
-                <nav class="header__nav-content-container">
-                    <a class="header__nav-logo" href="">
-                        <img src="img/top-Logo.svg" alt="" class="header__nav-logo-image">
-                    </a>
-                    <ul class="header__nav-link-container">
-                        <!-- <li><a class="page-active" href="#">HJEM</a></li> -->
-                        <li class="header__nav-link-item">
-                            <a class="header__nav-link-item-tag" href="#hva-anker">HVA</a>
-                        </li>
-                        <li class="header__nav-link-item">
-                            <a class="header__nav-link-item-tag" href="#hvorfor-anker">HVORFOR</a>
-                        </li>
-                        <li class="header__nav-link-item">
-                            <a class="header__nav-link-item-tag" href="#bruk-anker">ANVENDELSER</a>
-                        </li>
-                        <li class="header__nav-link-item">
-                            <a class="header__nav-link-item-tag" href="#oss-anker">OM OSS</a>
-                        </li>
-                        <li class="header__nav-link-item">
-                            <a class="header__nav-link-item-btn header__nav-link-item-tag" href="#kontakt-anker">KONTAKT</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="header__top-bar"></div>
+            <nav class="main-nav container">
+                <a class="main-nav__logo-anchor" href="">
+                    <img class="main-nav__logo-image" src="img/top-Logo.svg" alt="hybridkraft logo">
+                </a>
+                <ul class="nav-link">
+                    <li class="nav-link__item">
+                        <a class="nav-link__anchor" href="#hva-anker">HVA</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a class="nav-link__anchor" href="#hvorfor-anker">HVORFOR</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a class="nav-link__anchor" href="#bruk-anker">ANVENDELSER</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a class="nav-link__anchor" href="#oss-anker">OM OSS</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a class="btn btn--square btn--green" href="#kontakt-anker">KONTAKT</a>
+                    </li>
+                </ul>
+                <a class="main-nav__hamburger-anchor" href="">
+                    <img class="main-nav__hamburger-image" src="img/hamburger-btn.svg" alt="">
+                    <img class="main-nav__hamburger-image" src="img/hamburger-btn-x.svg" alt="">
+                </a>
+                <div class="main-nav__dark-background"></div>
+            </nav>
+
+
         <div class="header-content">
             <!-- <img class="header-content__bend" src="img/header-bend-top.png" alt="" class="top-content-area__top-bend">    -->
             <div class="header-content__container">
@@ -326,7 +330,7 @@
     </footer>
 
 
-</div>
+</div> <!--main-container-->
 
 <script src="script/main.js"></script>
 </body>
